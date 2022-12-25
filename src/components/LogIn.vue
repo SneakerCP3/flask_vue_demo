@@ -59,7 +59,7 @@ export default {
       }).then(response => {
         // console.log(response.data);
         if (response.data.res === true) {
-          this.$router.push("main_page")
+          this.$router.push({name:"MainPage"})
         } else {
           alert("failed");
         }

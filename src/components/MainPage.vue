@@ -14,7 +14,7 @@
           >
             <el-menu-item index="1">首页</el-menu-item>
             <el-menu-item index="2">学习</el-menu-item>
-            <el-menu-item index="3"><router-link to="/study_page">娱乐</router-link></el-menu-item>
+            <el-menu-item index="3"><router-link to="/main_page/study_page">娱乐</router-link></el-menu-item>
             <el-menu-item index="4">其他</el-menu-item>
           </el-menu>
         </el-col>
@@ -27,6 +27,7 @@
     </el-header>
 
     <el-main>
+        <h1>test</h1>
         <router-view></router-view>
     </el-main>
     <el-footer><span color="white">Copyright ©2022-2122 来福er</span>

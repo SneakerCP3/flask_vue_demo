@@ -6,20 +6,32 @@ import MainPage from "../components/MainPage"
 import StudyPage from "../components/StudyPage"
 // 创建并暴露一个路由器
 export default new VueRouter({
-  routes:[
+  routes: [
     {
-      path:"/main_page",
-      component:MainPage
+      name: "MainPage",
+      path: "/main_page",
+      component:MainPage,
+      children:[
+        {
+          name:"StudyPage",
+          // 注意这里的studypage是二级路由，不加斜杠
+          path:"study_page",
+          component: StudyPage
+        }
+      ] 
     },
     {
       // 定义路由需要指向的组件
-      path:"/",
-      component:LogIn
+      name: "LogIn",
+      path: "/",
+      component: LogIn
     },
-    {
-      path:"/study_page",
-      component:StudyPage
-    }
+    // {
+    //   name: "StudyPage",
+    //   path: "/study_page",
+    //   components: { StudyPage }
+    // }
 
   ]
+
 })
