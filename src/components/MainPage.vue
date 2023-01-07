@@ -27,7 +27,6 @@
     </el-header>
 
     <el-main>
-        <h1>test</h1>
         <router-view></router-view>
     </el-main>
     <el-footer><span color="white">Copyright ©2022-2122 来福er</span>
